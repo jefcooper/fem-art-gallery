@@ -1,5 +1,7 @@
 # Frontend Mentor - Art gallery website solution
 
+[![Deploy static content to Pages](https://github.com/jefcooper/fem-art-gallery/actions/workflows/static.yml/badge.svg)](https://github.com/jefcooper/fem-art-gallery/actions/workflows/static.yml)
+
 This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
