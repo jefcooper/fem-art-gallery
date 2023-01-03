@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap"
+    rel="stylesheet">
+
+  <!-- Project -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="location.css">
+
+  <!-- LeafletJS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="anonymous">
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="anonymous"></script>
+
+  <script type="module" src="script.js"></script>
+
+  <title>Frontend Mentor | Art gallery website</title>
+</head>
+
+<body>
+  <main class="main">
+    <div aria-hidden="true" id="location-map" class="location-map"></div>
+
+    <div class="button-container container">
+      <a href="index.html" class="btn btn--home">
+        <span class="btn__arrow" aria-hidden="true">
+          <svg class="icon--arrow-left">
+            <use href="assets/icons.svg#icon--arrow-left"></use>
+          </svg>
+        </span>
+        <span class="btn__text">
+          Back to Home
+        </span>
+      </a>
+    </div>
+
+    <div class="our-location container">
+      <h1 class="our-location__title heading--3">
+        Our location
+      </h1>
+
+      <div class="our-location__card">
+        <address class="our-location__address">
+          <p class="our-location__street-address heading--4">
+            99 King Street
+          </p>
+
+          <p class="text--body-1 text--address">Newport
+            RI 02840
+            United States of America</p>
+        </address>
+
+        <p class="text--body-1">
+          Our newly opened gallery is located near the Edward King House on 99 King
+          Street, the Modern Art Gallery is free to all visitors and open seven days
+          a week from 8am to 9pm.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer--bronze">
+    <div class="footer footer--bronze container">
+      <a href="index.html">
+        <span class="visually-hidden">Modern Art Gallery Home</span>
+        <svg class="icon icon--logo" aria-hidden="true">
+          <use href="assets/icons.svg#icon--logo"></use>
+        </svg>
+      </a>
+
+      <p class="text--body-2 footer__text">
+        The Modern Art Gallery is free to all visitors and open seven days a week
+        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+
+      <div class="social-icons">
+        <a href="https://facebook.com">
+          <span class="visually-hidden">Facebook</span>
+          <svg class="icon icon--facebook" aria-hidden="true">
+            <use href="assets/icons.svg#icon--facebook"></use>
+          </svg>
+        </a>
+        <a href="https://instagram.com">
+          <span class="visually-hidden">Instagram</span>
+          <svg class="icon icon--instagram" aria-hidden="true">
+            <use href="assets/icons.svg#icon--instagram"></use>
+          </svg>
+        </a>
+        <a href="https://twitter.com">
+          <span class="visually-hidden">Twitter</span>
+          <svg class="icon icon--twitter" aria-hidden="true">
+            <use href="assets/icons.svg#icon--twitter"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
