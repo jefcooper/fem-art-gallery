@@ -26,6 +26,13 @@
 }
 
 /**
+ * .modern-gallery__hero-image
+ */
+.modern-gallery__hero-image img {
+  object-fit: cover;
+}
+
+/**
  * .modern-gallery__card
  */
 .modern-gallery__card {
@@ -58,6 +65,13 @@
 }
 
 /**
+ * .your-day__picture img
+ */
+.your-day__picture img {
+  object-fit: cover;
+}
+
+/**
  * .your-day__card
  */
 .your-day__card {
@@ -75,6 +89,18 @@
   gap: 1rem;
 
   margin-top: 2rem;
+}
+
+/**
+ * .be-inspired__grid-2 img
+ */
+.be-inspired__grid-2 img {
+  object-fit: cover;
+}
+
+.be-inspired__grid-3 img {
+  object-fit: cover;
+  object-position: bottom;
 }
 
 /**
