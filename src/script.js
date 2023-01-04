@@ -1,3 +1,5 @@
+import "leaflet";
+
 /* data-text-before
 
    add this data attribute to any element and it will be populated with
