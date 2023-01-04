@@ -23,9 +23,9 @@
  *  variant used on the location page.
  */
 .footer--bronze {
-  background-color: var(--clr-accent-400);
+  background-color: $clr-accent-400;
 
-  color: var(--clr-neutral-900);
+  color: $clr-neutral-900;
 }
 
 /**
@@ -34,7 +34,7 @@
  *  change hover color when the --bronze variant is used.
  */
 .footer--bronze .icon:hover {
-  color: var(--clr-neutral-100);
+  color: $clr-neutral-100;
 }
 
 /**
@@ -43,9 +43,9 @@
  *  apply to use black background variant of footer on home page
  */
 .footer--black {
-  background-color: var(--clr-neutral-900);
+  background-color: $clr-neutral-900;
 
-  color: var(--clr-neutral-100);
+  color: $clr-neutral-100;
 }
 
 /**
@@ -54,7 +54,7 @@
  *  default behavior on hovering over the arrow icon
  */
 .footer--black .icon:hover {
-  color: var(--clr-accent-400);
+  color: $clr-accent-400;
 }
 
 /*----------------------------------------------------------------------------

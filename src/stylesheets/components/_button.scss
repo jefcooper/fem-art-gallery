@@ -11,9 +11,9 @@
   *   main button styling class, used with every button.
   */
 .btn {
-  // note: using variables here so location page variant is easy to swap
-  --_clr-button-left: var(--clr-neutral-900);
-  --_clr-button-right: var(--clr-accent-400);
+  // note: using css properties here so we can reverse them in hover by color reference
+  --_clr-button-left: #{$clr-neutral-900};
+  --_clr-button-right: #{$clr-accent-400};
 
   display: grid;
   grid-auto-flow: column;
@@ -27,7 +27,7 @@
 
   background-color: var(--_clr-button-left);
 
-  color: var(--clr-neutral-100);
+  color: $clr-neutral-100;
 
   user-select: none;
   cursor: pointer;
@@ -40,8 +40,8 @@
  *  for hover state, reverse the colors on left/right.
  */
 .btn:hover {
-  --_clr-button-left: var(--clr-accent-400);
-  --_clr-button-right: var(--clr-neutral-900);
+  --_clr-button-left: #{$clr-accent-400};
+  --_clr-button-right: #{$clr-neutral-900};
 }
 
 /**
@@ -68,15 +68,4 @@
   background-color: var(--_clr-button-right);
 
   transition: 150ms ease-in-out; /* soften hover transition */
-}
-
-/**
- * .btn--back-to-home
- *
- *  specific variant that positions the button outside of normal flow.
- *  todo: move this somewhere more appropriate, it's layout.  maybe an absolute
- *    utility class used on the specific button instead.
- */
-.btn--back-to-home {
-  position: absolute;
 }

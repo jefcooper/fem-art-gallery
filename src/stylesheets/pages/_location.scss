@@ -15,7 +15,7 @@
 .location-main {
   padding-bottom: 3.5rem;
 
-  background-color: var(--clr-neutral-900);
+  background-color: $clr-neutral-900;
 }
 
 /**
@@ -30,6 +30,8 @@
 
 /**
  * .btn--home
+ *
+ *  note: put this in here as an override to fix a specific layout issue where leafletjs wants to draw overtop
  */
 .btn--home {
   z-index: 200;
@@ -43,7 +45,7 @@
 
   margin-top: 3rem;
 
-  color: var(--clr-neutral-100);
+  color: $clr-neutral-100;
 }
 
 /**
@@ -73,7 +75,7 @@
 .our-location__street-address {
   margin-top: 3rem;
 
-  color: var(--clr-accent-400);
+  color: $clr-accent-400;
 }
 
 /**
