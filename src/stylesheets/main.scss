@@ -1,29 +1,30 @@
 @charset "UTF-8";
 
 // 1. Abstract
-@use "abstracts/variables";
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 // 2. Vendor
-@use "vendor/leaflet";
+@import "vendor/leaflet";
 
 // 3. Base
-@use "base/reset";
-@use "base/base";
-@use "base/fonts";
-@use "base/typography";
-@use "base/icons";
-@use "base/helpers";
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/icons";
+@import "base/helpers";
 
 // 4. Layout
-@use "layout/social";
-@use "layout/footer";
+@import "layout/social";
+@import "layout/footer";
 
 // 5. Components
-@use "components/button";
+@import "components/button";
 
 // 6. Page-specific styles
-@use "pages/index";
-@use "pages/location";
+@import "pages/index";
+@import "pages/location";
 
 // 7. Themes
-@use "themes/default";
+@import "themes/default";

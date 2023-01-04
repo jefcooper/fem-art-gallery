@@ -18,7 +18,10 @@
 /*----------------------------------------------------------------------------
   Tablet breakpoint
  ----------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@include media-breakpoint("tablet") {
+  /*
+@media screen and (min-width: breakpoint("tablet")) {
+  */
   /**
    * .social-icons
    *

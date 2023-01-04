@@ -60,7 +60,7 @@
 /*----------------------------------------------------------------------------
   Tablet breakpoint
  ----------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@include media-breakpoint("tablet") {
   /**
    * note: don't know what this is doing here, need to move it
    */
@@ -93,7 +93,7 @@
 /*----------------------------------------------------------------------------
   Desktop breakpoint
  ----------------------------------------------------------------------------*/
-@media screen and (min-width: 1024px) {
+@include media-breakpoint("tablet") {
   /**
    * .footer
    *

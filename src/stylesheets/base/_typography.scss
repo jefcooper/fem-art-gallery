@@ -15,8 +15,8 @@
 .heading--1 {
   display: block; // required for line-height less than 1
 
-  font-family: var(--ff-display);
-  font-weight: var(--fw-black);
+  font-family: $ff-display;
+  font-weight: $fw-black;
   font-size: 3.75rem;
   line-height: 0.9167;
   text-transform: uppercase;
@@ -28,8 +28,8 @@
 .heading--2 {
   display: block; // required for line-height less than 1
 
-  font-family: var(--ff-display);
-  font-weight: var(--fw-black);
+  font-family: $ff-display;
+  font-weight: $fw-black;
   font-size: 3.125rem;
   line-height: 0.9;
   text-transform: uppercase;
@@ -41,8 +41,8 @@
 .heading--3 {
   display: block; // required for line-height less than 1
 
-  font-family: var(--ff-display);
-  font-weight: var(--fw-black);
+  font-family: $ff-display;
+  font-weight: $fw-black;
   font-size: 3.125rem;
   line-height: 0.9;
   text-transform: uppercase;
@@ -54,8 +54,8 @@
 .heading--4 {
   display: block; // required for line-height less than 1
 
-  font-family: var(--ff-display);
-  font-weight: var(--fw-black);
+  font-family: $ff-display;
+  font-weight: $fw-black;
   font-size: 2rem;
   line-height: 1;
   text-transform: uppercase;
@@ -65,8 +65,8 @@
  * Paragraph text 
  */
 .text--body-1 {
-  font-family: var(--ff-base);
-  font-weight: var(--fw-light);
+  font-family: $ff-base;
+  font-weight: $fw-light;
   font-size: 1.125rem;
   line-height: 1.56;
 }
@@ -75,8 +75,8 @@
  * Smaller text in Footer 
  */
 .text--body-2 {
-  font-family: var(--ff-base);
-  font-weight: var(--fw-light);
+  font-family: $ff-base;
+  font-weight: $fw-light;
   font-size: 1rem;
   line-height: 1.625;
 }
@@ -92,8 +92,8 @@
  * Button text 
  */
 .btn {
-  font-family: var(--ff-display);
-  font-weight: var(--fw-extra-bold);
+  font-family: $ff-display;
+  font-weight: $fw-extra-bold;
   font-size: 1.25rem;
   line-height: 1;
   letter-spacing: 3.64px;
@@ -103,7 +103,7 @@
 /*---------------------------------------------------------------------------
  * Typography on Tablet 
  *--------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@include media-breakpoint("tablet") {
   /**
    * Hero heading
    */
@@ -123,7 +123,7 @@
 /*---------------------------------------------------------------------------
  * Typography on Desktop 
  *--------------------------------------------------------------------------*/
-@media screen and (min-width: 1024px) {
+@include media-breakpoint("desktop") {
   /**
    * Hero heading
    */

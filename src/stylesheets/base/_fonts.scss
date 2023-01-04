@@ -10,10 +10,10 @@
  * Big Shoulders Display - 900, fixed-weight font
  */
 @font-face {
-  font-family: "Big Shoulders Display";
+  font-family: $font-display;
   font-style: normal;
-  font-weight: 900;
-  src: local("Big Shoulders Display"),
+  font-weight: $fw-black;
+  src: local($font-display),
     url("/assets/fonts/BigShouldersDisplay-Black.ttf") format("truetype");
   font-display: swap;
 }
@@ -22,10 +22,10 @@
  * Big Shoulders Display - 800, fixed-weight font
  */
 @font-face {
-  font-family: "Big Shoulders Display";
+  font-family: $font-display;
   font-style: normal;
-  font-weight: 800;
-  src: local("Big Shoulders Display"),
+  font-weight: $fw-extra-bold;
+  src: local($font-display),
     url("/assets/fonts/BigShouldersDisplay-ExtraBold.ttf") format("truetype");
   font-display: swap;
 }
@@ -34,9 +34,10 @@
  * Outfit - 300, fixed-weight font
  */
 @font-face {
-  font-family: "Outfit";
+  font-family: $font-base;
   font-style: normal;
-  font-weight: 300;
-  src: local("Outfit"), url("/assets/fonts/Outfit-Light.ttf") format("truetype");
+  font-weight: $fw-light;
+  src: local($font-base),
+    url("/assets/fonts/Outfit-Light.ttf") format("truetype");
   font-display: swap;
 }

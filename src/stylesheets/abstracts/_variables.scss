@@ -5,19 +5,14 @@
  *
  *****************************************************************************/
 
+@use "sass:map";
+
 /**
  * :root
  *
  *  The global context for any CSS variables.
  */
 :root {
-  --ff-display: "Big Shoulders Display", sans-serif;
-  --fw-black: 900;
-  --fw-extra-bold: 800;
-
-  --ff-base: "Outfit", sans-serif;
-  --fw-light: 300;
-
   --clr-accent-400: hsl(24, 56%, 63%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-700: hsl(0, 0%, 27%);
@@ -26,3 +21,29 @@
   --container-max-width: calc(1110px);
   --container-margin: 1rem;
 }
+
+$container-max-width: 1110px !default;
+$container-margin: 1rem !default;
+
+/// Colors
+$clr-accent-400: hsl(24, 56%, 63%) !default;
+$clr-neutral-100: hsl(0, 0%, 100%) !default;
+$clr-neutral-700: hsl(0, 0%, 27%) !default;
+$clr-neutral-900: hsl(0, 0%, 8%) !default;
+
+/// Font Characteristics
+$font-base: "Outfit" !default;
+$font-display: "Big Shoulders Display" !default;
+$ff-base: $font-base, sans-serif;
+$ff-display: $font-display, sans-serif;
+$fw-light: 300;
+$fw-extra-bold: 800;
+$fw-black: 900;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "tablet": 768px,
+  "desktop": 1024px,
+) !default;

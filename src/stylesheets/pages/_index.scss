@@ -95,7 +95,7 @@
 /*----------------------------------------------------------------------------
   Tablet breakpoint
  ----------------------------------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@include media-breakpoint("tablet") {
   /**
    * .container
    *
@@ -216,7 +216,7 @@
 /*----------------------------------------------------------------------------
   Desktop breakpoint
  ----------------------------------------------------------------------------*/
-@media screen and (min-width: 1024px) {
+@include media-breakpoint("desktop") {
   /**
    * .index-main
    */
@@ -272,7 +272,7 @@
       0px 0px 0px
         calc(
           var(--_modern-gallery__black-padding-left) -
-            max(50vw - var(--container-max-width) / 2, var(--container-margin))
+            max(50vw - var(--container-max-width) / 2, $container-margin)
         )
     );
   }
