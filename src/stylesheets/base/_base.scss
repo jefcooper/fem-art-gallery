@@ -1,3 +1,13 @@
+/*****************************************************************************
+ * base
+ *
+ *  Foundational initialization of core elements.
+ *
+ *****************************************************************************/
+
+/**
+ * body
+ */
 body {
   font-family: var(--ff-base);
   font-weight: var(--fw-light);
@@ -6,6 +16,9 @@ body {
   color: var(--clr-neutral-900);
 }
 
+/**
+ * img
+ */
 img {
   width: 100%;
 }

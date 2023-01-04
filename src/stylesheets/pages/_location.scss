@@ -1,17 +1,43 @@
+/*****************************************************************************
+ * location
+ *
+ *  location.html page layout specifics
+ *
+ *****************************************************************************/
+
+/*---------------------------------------------------------------------------
+  Mobile and default breakpoint
+ ---------------------------------------------------------------------------*/
+
+/**
+ * .location-main
+ */
 .location-main {
   padding-bottom: 3.5rem;
 
   background-color: var(--clr-neutral-900);
 }
+
+/**
+ * .button-container.container
+ */
 .button-container.container {
   --_container-margin: 0px;
   position: absolute;
   top: 0;
   z-index: 100;
 }
+
+/**
+ * .btn--home
+ */
 .btn--home {
   z-index: 200;
 }
+
+/**
+ * .our-location
+ */
 .our-location {
   display: grid;
 
@@ -19,66 +45,96 @@
 
   color: var(--clr-neutral-100);
 }
+
+/**
+ * .our-location__card
+ */
 .our-location__card {
   display: grid;
 }
+
+/**
+ * .our-location__address
+ */
 .our-location__address {
   font-style: normal;
 }
+
+/**
+ * .our-location__title
+ */
 .our-location__title {
   margin-top: 1.25rem;
 }
+
+/**
+ * .our-location__street-address
+ */
 .our-location__street-address {
   margin-top: 3rem;
 
   color: var(--clr-accent-400);
 }
+
+/**
+ * .our-location .text--body-1
+ */
 .our-location .text--body-1 {
   margin-top: 1.25rem;
 }
 
+/**
+ * .location-map
+ */
 .location-map {
   height: 550px;
   z-index: 50;
 }
-/* This magic came from a stackoverflow post 
-   it explicitly overrides the css built-in style for leaflet. */
-.leaflet-tile {
-  filter: grayscale(100%) !important;
-}
 
-.footer--bronze {
-  background-color: var(--clr-accent-400);
-
-  color: var(--clr-neutral-900);
-}
-.footer--bronze .icon:hover {
-  color: var(--clr-neutral-100);
-}
-
-/* Tablet */
+/*---------------------------------------------------------------------------
+  Tablet breakpoint
+ ---------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
+  /**
+   * .our-location
+   */
   .our-location {
     grid-auto-flow: column;
   }
+
+  /**
+   * .button-container.container
+   */
   .button-container.container {
     --_container-margin: var(--container-margin);
   }
+
+  /**
+   * .our-location__card
+   */
   .our-location__card {
     grid-auto-flow: row;
   }
+
+  /**
+   * .our-location__title
+   */
   .our-location__title {
     width: 10ch;
     margin: 0;
   }
+
+  /**
+   * .our-location__street-address
+   */
   .our-location__street-address {
     margin: 0;
   }
+
+  /**
+   * .location-map
+   */
   .location-map {
     height: 600px;
   }
-}
-
-/* Desktop */
-@media screen and (min-width: 1024px) {
 }

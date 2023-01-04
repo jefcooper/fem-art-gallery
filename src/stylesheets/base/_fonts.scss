@@ -1,3 +1,14 @@
+/*****************************************************************************
+ * fonts
+ *
+ *  Font definitions used throughout the site.  Note that fonts files are
+ *  located in assets/fonts.
+ *
+ *****************************************************************************/
+
+/**
+ * Big Shoulders Display - 900, fixed-weight font
+ */
 @font-face {
   font-family: "Big Shoulders Display";
   font-style: normal;
@@ -6,6 +17,9 @@
     url("/assets/fonts/BigShouldersDisplay-Black.ttf") format("truetype");
 }
 
+/**
+ * Big Shoulders Display - 800, fixed-weight font
+ */
 @font-face {
   font-family: "Big Shoulders Display";
   font-style: normal;
@@ -14,6 +28,9 @@
     url("/assets/fonts/BigShouldersDisplay-ExtraBold.ttf") format("truetype");
 }
 
+/**
+ * Outfit - 300, fixed-weight font
+ */
 @font-face {
   font-family: "Outfit";
   font-style: normal;

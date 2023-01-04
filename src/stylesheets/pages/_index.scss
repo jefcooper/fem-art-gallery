@@ -1,11 +1,33 @@
+/*****************************************************************************
+ * index
+ *
+ *  index.html page layout specifics
+ *
+ *****************************************************************************/
+
+/*----------------------------------------------------------------------------
+  Mobile and default breakpoint
+ ----------------------------------------------------------------------------*/
+
+/**
+ * .index-main
+ */
 .index-main {
   padding-bottom: 7.5rem;
 }
+
+/**
+ * .modern-gallery
+ */
 .modern-gallery {
   --_modern-gallery__gap: 2rem;
 
   display: grid;
 }
+
+/**
+ * .modern-gallery__card
+ */
 .modern-gallery__card {
   display: grid;
   align-items: center;
@@ -14,11 +36,18 @@
   margin-top: 2rem;
   margin-inline: 1rem;
 }
+
+/**
+ * .modern-gallery__subsection
+ */
 .modern-gallery__subsection {
   display: grid;
   gap: var(--_modern-gallery__gap);
 }
 
+/**
+ * .your-day
+ */
 .your-day {
   --_your-day__gap: 1.3125rem;
 
@@ -27,6 +56,10 @@
 
   margin-top: 7.5rem;
 }
+
+/**
+ * .your-day__card
+ */
 .your-day__card {
   display: grid;
   gap: var(--_your-day__gap);
@@ -34,12 +67,19 @@
   margin-top: 1.5625rem;
 }
 
+/**
+ * .be-inspired
+ */
 .be-inspired {
   display: grid;
   gap: 1rem;
 
   margin-top: 2rem;
 }
+
+/**
+ * .be-inspired__card
+ */
 .be-inspired__card {
   display: grid;
   align-content: center;
@@ -52,16 +92,31 @@
   background-color: var(--clr-neutral-900);
 }
 
-/* Tablet */
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
+  /**
+   * .container
+   *
+   *  page specific override to the container padding.
+   */
   .container {
     --_container-margin-inline: 2.5rem;
   }
+
+  /**
+   * .modern-gallery
+   */
   .modern-gallery {
     --_modern-gallery__gap: 3rem;
 
     grid-template-columns: 437px auto;
   }
+
+  /**
+   * .modern-gallery__card
+   */
   .modern-gallery__card {
     align-content: center;
     gap: var(--_modern-gallery__gap);
@@ -70,28 +125,52 @@
     margin-left: -3rem;
     margin-right: 2.5rem;
   }
+
+  /**
+   * .modern-gallery__subsection
+   */
   .modern-gallery__subsection {
     gap: var(--_modern-gallery__gap);
   }
+
+  /**
+   * .modern-gallery__img
+   */
   .modern-gallery__img {
     width: auto;
     height: 100%;
   }
+
+  /**
+   * .your-day
+   */
   .your-day {
     --_your-day__gap: 1.5rem;
 
     grid-template-columns: 1fr auto;
     column-gap: 4.25rem;
   }
+
+  /**
+   * .your-day__picture
+   */
   .your-day__picture {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
+
+  /**
+   * .your-day__card
+   */
   .your-day__card {
     align-content: center;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
+
+  /**
+   * .be-inspired
+   */
   .be-inspired {
     grid-template-columns: 1.427fr 1fr;
     grid-template-rows: auto auto;
@@ -99,17 +178,33 @@
 
     margin-top: 0.6875rem;
   }
+
+  /**
+   * .be-inspired__grid-2
+   */
   .be-inspired__grid-2 {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
   }
+
+  /**
+   * .be-inspired__grid-3
+   */
   .be-inspired__grid-3 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
+
+  /**
+   * .be-inspired__grid-3
+   */
   .be-inspired__grid-3 img {
     height: 100%;
   }
+
+  /**
+   * .be-inspired__card
+   */
   .be-inspired__card {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -118,11 +213,20 @@
   }
 }
 
-/* Desktop */
+/*----------------------------------------------------------------------------
+  Desktop breakpoint
+ ----------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px) {
+  /**
+   * .index-main
+   */
   .index-main {
     padding-bottom: 11.25rem;
   }
+
+  /**
+   * .modern-gallery
+   */
   .modern-gallery {
     --_modern-gallery__black-padding-left: 450px;
     --_modern-gallery__gap: 4rem;
@@ -130,33 +234,40 @@
     position: relative;
     grid-template-columns: 990px auto;
   }
+
+  /**
+   * .modern-gallery__title
+   */
   .modern-gallery__title {
-    /* ensure that pseudo elements are positioned relative to here. */
+    // ensure that pseudo elements are positioned relative to here.
     position: relative;
 
-    /* note: set this artificially to get the same line break as in design */
+    // note: set this artificially to get the same line break as in design
     width: 450px;
 
-    /* this is the white portion of text that gets revealed */
+    // this is the white portion of text that gets revealed
     color: var(--clr-neutral-100);
   }
+
+  /**
+   * .modern-gallery__title::before
+   */
   .modern-gallery__title::before {
-    /* position at top/left overlapping main text */
+    // position at top/left overlapping main text
     position: absolute;
 
-    /* Pull in the element text as an attribute set by javascript 
-       See script.js data-text-before. */
+    // Pull in the element text as an attribute set by javascript
+    // See script.js data-text-before.
     content: attr(data-text-before);
 
-    /* note: it is the BLACK text that is placed over top and clipped
-       without this effect, the text remains white and this happens if JS is disabled */
+    // note: it is the BLACK text that is placed over top and clipped
+    // without this effect, the text remains white and this happens if JS is disabled
     color: var(--clr-neutral-900);
 
-    /* note: 450px is the black column width derived from 990px - image width */
-    /* This is the heart of the white/black text effect.  Here we calculate the
-       difference between the black section width and the container left margin.
-       We then take this amount off of the left side to reveal the white text.
-     */
+    // note: 450px is the black column width derived from 990px - image width
+    // This is the heart of the white/black text effect.  Here we calculate the
+    // difference between the black section width and the container left margin.
+    // We then take this amount off of the left side to reveal the white text.
     clip-path: inset(
       0px 0px 0px
         calc(
@@ -165,6 +276,10 @@
         )
     );
   }
+
+  /**
+   * .modern-gallery__hero-image
+   */
   .modern-gallery__hero-image {
     padding-left: var(--_modern-gallery__black-padding-left);
 
@@ -172,6 +287,10 @@
 
     background-color: var(--clr-neutral-900);
   }
+
+  /**
+   * .modern-gallery__card
+   */
   .modern-gallery__card {
     position: absolute;
     display: grid;
@@ -191,12 +310,24 @@
       var(--container-margin)
     );
   }
+
+  /**
+   * .modern-gallery__card .text--body-1
+   */
   .modern-gallery__card .text--body-1 {
     width: 24ch;
   }
+
+  /**
+   * .your-day
+   */
   .your-day {
     margin-top: 11.25rem;
   }
+
+  /**
+   * .be-inspired
+   */
   .be-inspired {
     gap: 1.875rem;
 

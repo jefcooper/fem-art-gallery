@@ -1,5 +1,17 @@
+/*****************************************************************************
+ * button
+ *
+ *  btn component class
+ *
+ *****************************************************************************/
+
+/**
+  * .btn
+  *
+  *   main button styling class, used with every button.
+  */
 .btn {
-  /* note: using variables here so location page variant is easy to swap */
+  // note: using variables here so location page variant is easy to swap
   --_clr-button-left: var(--clr-neutral-900);
   --_clr-button-right: var(--clr-accent-400);
 
@@ -19,11 +31,33 @@
 
   user-select: none;
   cursor: pointer;
-  transition: 150ms ease-in-out; /* soften hover transition */
+  transition: 150ms ease-in-out; // soften hover transition
 }
+
+/**
+ * .btn:hover
+ *
+ *  for hover state, reverse the colors on left/right.
+ */
+.btn:hover {
+  --_clr-button-left: var(--clr-accent-400);
+  --_clr-button-right: var(--clr-neutral-900);
+}
+
+/**
+ * .btn__text
+ *
+ *  apply to the visible text describing the button when shown.
+ */
 .btn__text {
   padding-inline: 2rem;
 }
+
+/**
+ * .btn__arrow
+ *
+ *  apply to the icon arrow on the left/right of the button
+ */
 .btn__arrow {
   display: grid;
   place-items: center;
@@ -35,10 +69,14 @@
 
   transition: 150ms ease-in-out; /* soften hover transition */
 }
-.btn:hover {
-  --_clr-button-left: var(--clr-accent-400);
-  --_clr-button-right: var(--clr-neutral-900);
-}
+
+/**
+ * .btn--back-to-home
+ *
+ *  specific variant that positions the button outside of normal flow.
+ *  todo: move this somewhere more appropriate, it's layout.  maybe an absolute
+ *    utility class used on the specific button instead.
+ */
 .btn--back-to-home {
   position: absolute;
 }

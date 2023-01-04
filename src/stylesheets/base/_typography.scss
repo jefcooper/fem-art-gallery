@@ -1,10 +1,19 @@
-/**
- * Typography
- */
+/*****************************************************************************
+ * typography
+ *
+ *  Type hierarchy for the site.
+ *
+ *****************************************************************************/
 
-/* Hero Section Title */
+/*---------------------------------------------------------------------------
+ * Default and mobile typography
+ *--------------------------------------------------------------------------*/
+
+/**
+ * Hero Section Title 
+ */
 .heading--1 {
-  display: block; /* required for line-height less than 1 */
+  display: block; // required for line-height less than 1
 
   font-family: var(--ff-display);
   font-weight: var(--fw-black);
@@ -12,9 +21,12 @@
   line-height: 0.9167;
   text-transform: uppercase;
 }
-/* Secondary headings on first page */
+
+/**
+ * Secondary headings on first page 
+ */
 .heading--2 {
-  display: block; /* required for line-height less than 1 */
+  display: block; // required for line-height less than 1
 
   font-family: var(--ff-display);
   font-weight: var(--fw-black);
@@ -22,9 +34,12 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
-/* Main heading on Location page */
+
+/**
+ * Main heading on Location page 
+ */
 .heading--3 {
-  display: block; /* required for line-height less than 1 */
+  display: block; // required for line-height less than 1
 
   font-family: var(--ff-display);
   font-weight: var(--fw-black);
@@ -32,9 +47,12 @@
   line-height: 0.9;
   text-transform: uppercase;
 }
-/* Secondary headings on Location page */
+
+/**
+ * Secondary headings on Location page 
+ */
 .heading--4 {
-  display: block; /* required for line-height less than 1 */
+  display: block; // required for line-height less than 1
 
   font-family: var(--ff-display);
   font-weight: var(--fw-black);
@@ -42,25 +60,37 @@
   line-height: 1;
   text-transform: uppercase;
 }
-/* Paragraph text */
+
+/**
+ * Paragraph text 
+ */
 .text--body-1 {
   font-family: var(--ff-base);
   font-weight: var(--fw-light);
   font-size: 1.125rem;
   line-height: 1.56;
 }
-/* Smaller text in Footer */
+
+/**
+ * Smaller text in Footer 
+ */
 .text--body-2 {
   font-family: var(--ff-base);
   font-weight: var(--fw-light);
   font-size: 1rem;
   line-height: 1.625;
 }
-/* Verbatim line spacing for multi-line address */
+
+/**
+ * Verbatim line spacing for multi-line address 
+ */
 .text--address {
   white-space: pre-line;
 }
-/* Button text */
+
+/**
+ * Button text 
+ */
 .btn {
   font-family: var(--ff-display);
   font-weight: var(--fw-extra-bold);
@@ -70,28 +100,49 @@
   text-transform: uppercase;
 }
 
-/* Typography on Tablet */
+/*---------------------------------------------------------------------------
+ * Typography on Tablet 
+ *--------------------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
+  /**
+   * Hero heading
+   */
   .heading--1 {
     font-size: 4.375rem;
     line-height: 0.9286;
   }
+
+  /**
+   * Main heading on Location page 
+   */
   .heading--3 {
     font-size: 3.4375rem;
   }
 }
 
-/* Typography on Desktop */
+/*---------------------------------------------------------------------------
+ * Typography on Desktop 
+ *--------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px) {
+  /**
+   * Hero heading
+   */
   .heading--1 {
     font-size: 6rem;
     line-height: 0.9167;
   }
+
+  /**
+   * Secondary headings on first page 
+   */
   .heading--2 {
     font-size: 3.75rem;
     line-height: 1;
   }
-  /* Paragraph text */
+
+  /**
+   * Paragraph text 
+   */
   .text--body-1 {
     font-size: 1.375rem;
     line-height: 1.4545;

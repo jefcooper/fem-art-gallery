@@ -1,3 +1,13 @@
+/*****************************************************************************
+ * Helper Classes
+ *
+ *  Reusable utility classes.
+ *
+ *****************************************************************************/
+
+/**
+ * .visually-hidden
+ */
 .visually-hidden {
   position: absolute;
 
@@ -11,12 +21,12 @@
   clip-path: inset(50%);
 }
 
-/*----------------------------------------------------------
-  container
-
-    constrain the maximum width on desktop and add a margin
-    when within the max-width.
-------------------------------------------------------------*/
+/**
+ * .container
+ *
+ *  constrain the maximum width on desktop and add a margin
+ *  when within the max-width.
+ */
 .container {
   --_container-margin: var(--container-margin, 1.5rem); /* mobile is default */
   --_container-max-width: var(
