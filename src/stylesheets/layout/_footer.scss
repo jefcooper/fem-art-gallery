@@ -1,0 +1,45 @@
+.footer {
+  display: grid;
+  gap: 2.375rem;
+
+  padding-block: 3rem;
+}
+.footer--black {
+  background-color: var(--clr-neutral-900);
+
+  color: var(--clr-neutral-100);
+}
+.footer .icon:hover {
+  color: var(--clr-accent-400);
+}
+.social-icons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --container-margin: 2.5rem;
+  }
+  .footer {
+    grid-auto-flow: column;
+    gap: 4rem;
+
+    padding-block: 3.5rem;
+  }
+  .footer__text {
+    width: 25ch;
+  }
+  .social-icons {
+    justify-self: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-block: 5rem;
+  }
+  .footer .icon--logo {
+    zoom: 1.45;
+  }
+}

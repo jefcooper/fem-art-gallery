@@ -1,0 +1,52 @@
+/**
+ * Icons
+ */
+.icon {
+  user-select: none;
+  cursor: pointer;
+  transition: 150ms ease-in-out; /* soften hover transition, not so abrupt */
+}
+.icon--arrow-left {
+  width: 10px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentcolor;
+}
+.icon--arrow-right {
+  width: 10px;
+  height: 24px;
+
+  fill: none;
+  stroke: currentcolor;
+}
+.icon--facebook {
+  width: 20px;
+  height: 20px;
+
+  fill: currentcolor;
+}
+.icon--instagram {
+  width: 20px;
+  height: 20px;
+
+  fill: currentcolor;
+}
+.icon--twitter {
+  width: 20px;
+  height: 17px;
+
+  fill: currentcolor;
+}
+.icon--location {
+  width: 66px;
+  height: 88px;
+
+  fill: currentcolor;
+}
+.icon--logo {
+  width: 111px;
+  height: 40px;
+
+  fill: currentcolor;
+}

@@ -1,0 +1,99 @@
+/**
+ * Typography
+ */
+
+/* Hero Section Title */
+.heading--1 {
+  display: block; /* required for line-height less than 1 */
+
+  font-family: var(--ff-display);
+  font-weight: var(--fw-black);
+  font-size: 3.75rem;
+  line-height: 0.9167;
+  text-transform: uppercase;
+}
+/* Secondary headings on first page */
+.heading--2 {
+  display: block; /* required for line-height less than 1 */
+
+  font-family: var(--ff-display);
+  font-weight: var(--fw-black);
+  font-size: 3.125rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+/* Main heading on Location page */
+.heading--3 {
+  display: block; /* required for line-height less than 1 */
+
+  font-family: var(--ff-display);
+  font-weight: var(--fw-black);
+  font-size: 3.125rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+/* Secondary headings on Location page */
+.heading--4 {
+  display: block; /* required for line-height less than 1 */
+
+  font-family: var(--ff-display);
+  font-weight: var(--fw-black);
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+/* Paragraph text */
+.text--body-1 {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-light);
+  font-size: 1.125rem;
+  line-height: 1.56;
+}
+/* Smaller text in Footer */
+.text--body-2 {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-light);
+  font-size: 1rem;
+  line-height: 1.625;
+}
+/* Verbatim line spacing for multi-line address */
+.text--address {
+  white-space: pre-line;
+}
+/* Button text */
+.btn {
+  font-family: var(--ff-display);
+  font-weight: var(--fw-extra-bold);
+  font-size: 1.25rem;
+  line-height: 1;
+  letter-spacing: 3.64px;
+  text-transform: uppercase;
+}
+
+/* Typography on Tablet */
+@media screen and (min-width: 768px) {
+  .heading--1 {
+    font-size: 4.375rem;
+    line-height: 0.9286;
+  }
+  .heading--3 {
+    font-size: 3.4375rem;
+  }
+}
+
+/* Typography on Desktop */
+@media screen and (min-width: 1024px) {
+  .heading--1 {
+    font-size: 6rem;
+    line-height: 0.9167;
+  }
+  .heading--2 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+  /* Paragraph text */
+  .text--body-1 {
+    font-size: 1.375rem;
+    line-height: 1.4545;
+  }
+}
