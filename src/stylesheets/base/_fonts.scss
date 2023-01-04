@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Big Shoulders Display"),
+    url("../../assets/fonts/BigShouldersDisplay-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Big Shoulders Display"),
+    url("../../assets/fonts/BigShouldersDisplay-ExtraBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Outfit"),
+    url("../../assets/fonts/Outfit-Light.ttf") format("truetype");
+}

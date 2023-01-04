@@ -75,6 +75,8 @@ Users should be able to:
 - Testing on Safari, word wrapping is different for my hero title text. The before is not breaking at the desired spot. Am using white-space: pre-line to explicitly set. Since this doesn't work, changing to use a fixed pixel width on the title to get the desired break.
 - Moved to having a build toolchain rather than bare files.
 - Was previously using Github pages pointing to the root of my git repo. Migrated to using a Github action workflow and deploying from a 'dist' directory created in an explicit build step.
+- Refactored multiple css files (3 of them) to a Sass 7-1 architecture structure and include only one main.scss in both pages.
+- Changed from using leaflet from a CDN to installing leaflet as an npm dependency and packaging in my dist through vite.
 
 ### Github Actions Workflow
 
