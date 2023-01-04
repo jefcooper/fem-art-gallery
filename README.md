@@ -78,6 +78,7 @@ Users should be able to:
 - Refactored multiple css files (3 of them) to a Sass 7-1 architecture structure and include only one main.scss in both pages.
 - Changed from using leaflet from a CDN to installing leaflet as an npm dependency and packaging in my dist through vite.
 - font-display: swap to allow fonts to show using system fonts while page is still loading. google lighthouse.
+- used Lighthouse to profile the page load performance and identify issues. It identified that I wasn't setting an explicit width and height on my images. After setting these properties in the img and source elements, page load time improved dramatically. Also used https://pagespeed.web.dev/ to see how it scored remotely.
 
 ### Github Actions Workflow
 
@@ -151,6 +152,7 @@ jobs:
 - https://sass-guidelin.es/
 - https://github.com/KittyGiraudel/sass-boilerplate
 - https://css-tricks.com/
+- https://pagespeed.web.dev/
 
 #### Tooling
 
